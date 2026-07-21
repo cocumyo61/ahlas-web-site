@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahlas Grup Yapı | İnşaat Malzemeleri Toptan &amp; Perakende Satış</title>
+<meta name="description" content="Ahlas Grup Yapı; şap kumu, kaba kum, sıva kumu, çimento, yapı kimyasalları, alçı-alçıpan, XPS/EPS ve gazbeton gibi inşaat malzemelerinde güvenilir tedarikçiniz.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: '#5A1A30', dark: '#3D1220', light: '#7A2C48' },
+          accent: { DEFAULT: '#6FB8E0', dark: '#3E8FBF', light: '#EAF6FC' }
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- HEADER -->
+<header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Ahlas Grup Yapı Logo" class="h-14 w-auto">
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 font-heading text-sm text-gray-700">
+      <a href="index.html" class="nav-link active pb-1">Ana Sayfa</a>
+      <a href="hakkimizda.html" class="nav-link pb-1">Hakkımızda</a>
+      <a href="urunler.html" class="nav-link pb-1">Ürünler</a>
+      <a href="projeler.html" class="nav-link pb-1">Projeler</a>
+      <a href="iletisim.html" class="nav-link pb-1">İletişim</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-5">
+      <a href="tel:02122536161" class="flex items-center gap-2 text-primary font-semibold text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.01l-2.2 2.21z"/></svg>
+        0212 253 61 61
+      </a>
+      <a href="iletisim.html#form" class="bg-primary hover:bg-primary-dark text-white text-sm font-heading font-semibold px-5 py-2.5 rounded-lg transition-colors">Teklif Alın</a>
+    </div>
+
+    <button id="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5">
+      <span class="hamburger-line line-1 block w-6 h-0.5 bg-primary"></span>
+      <span class="hamburger-line line-2 block w-6 h-0.5 bg-primary"></span>
+      <span class="hamburger-line line-3 block w-6 h-0.5 bg-primary"></span>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden border-t border-gray-100">
+    <nav class="flex flex-col px-5 py-4 gap-4 font-heading text-gray-700">
+      <a href="index.html" class="active">Ana Sayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="urunler.html">Ürünler</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="tel:02122536161" class="text-primary font-semibold">0212 253 61 61</a>
+      <a href="iletisim.html#form" class="bg-primary text-white text-center font-semibold px-5 py-2.5 rounded-lg">Teklif Alın</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-pattern text-white">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block bg-white/10 text-accent text-xs font-heading font-semibold tracking-wide px-4 py-1.5 rounded-full mb-6">İNŞAAT MALZEMELERİNDE GÜVENİLİR ÇÖZÜM ORTAĞINIZ</span>
+      <h1 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-6">Yapının Güvenilir Adresi</h1>
+      <p class="text-white/80 text-lg leading-relaxed mb-8 max-w-xl">Ahlas Grup Yapı olarak, ihtiyaçlarınızı hızlı, güvenli ve sorunsuz bir şekilde ulaştırıyoruz. Yenilikçi inşaat malzemeleriyle projelerinize güç katarken, güvenilir hizmet sunmayı hedefliyoruz.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="urunler.html" class="bg-accent hover:bg-accent-dark text-primary-dark font-heading font-semibold px-6 py-3.5 rounded-lg transition-colors">Ürünlerimizi İnceleyin</a>
+        <a href="iletisim.html#form" class="border border-white/30 hover:bg-white/10 font-heading font-semibold px-6 py-3.5 rounded-lg transition-colors">Teklif Alın</a>
+      </div>
+    </div>
+    <div class="hidden md:flex justify-center">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur border border-white/10">
+          <p class="font-heading font-bold text-lg mb-1">Hızlı Teslimat</p>
+          <p class="text-white/70 text-sm">Projeniz beklemesin, siparişiniz zamanında sahada.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur border border-white/10 mt-8">
+          <p class="font-heading font-bold text-lg mb-1">Güvenilir Markalar</p>
+          <p class="text-white/70 text-sm">Dalsan, Entegre, Baumit ve Ytong ürünleri.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur border border-white/10">
+          <p class="font-heading font-bold text-lg mb-1">Geniş Ürün Yelpazesi</p>
+          <p class="text-white/70 text-sm">Kumdan yalıtıma tek adresten temin.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur border border-white/10 mt-8">
+          <p class="font-heading font-bold text-lg mb-1">Uzman Danışmanlık</p>
+          <p class="text-white/70 text-sm">Projenize en uygun malzemede yönlendirme.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜRÜN KATEGORİLERİ -->
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-20">
+  <div class="text-center max-w-2xl mx-auto mb-14">
+    <span class="text-accent-dark font-heading font-semibold text-sm tracking-wide uppercase">Ürün Kategorilerimiz</span>
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-dark mt-3">En Çok Tercih Edilen Ürünlerimiz</h2>
+    <p class="text-gray-500 mt-4">Şap kumundan gazbetona, çimentodan yapı kimyasallarına kadar ihtiyacınız olan her şey tek adreste.</p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <a href="urunler.html#kum" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20h16M6 20l3-9m6 9l-3-9M9 11h6M9 11L7 4h10l-2 7"/></svg>
+      </div>
+      <h3 class="font-heading font-semibold text-lg mb-2">Şap, Kaba ve Sıva Kumu</h3>
+      <p class="text-gray-500 text-sm">Elenmiş, kaliteli kum çeşitleri ile sağlam ve pürüzsüz yüzeyler.</p>
+    </a>
+
+    <a href="urunler.html#cimento" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0v10l-8 4m8-14l-8 4m0 10l-8-4V7m8 14V11m0 0L4 7"/></svg>
+      </div>
+      <h3 class="font-heading font-semibold text-lg mb-2">Çimento (32.5 - 42.5)</h3>
+      <p class="text-gray-500 text-sm">Farklı dayanım sınıflarında, projeye özel çimento tedariki.</p>
+    </a>
+
+    <a href="urunler.html#kimyasal" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6m-5 0v6.2a2 2 0 01-.4 1.2L5.5 16.6A2 2 0 007 20h10a2 2 0 001.5-3.4l-4.1-6.2A2 2 0 0114 9.2V3"/></svg>
+      </div>
+      <h3 class="font-heading font-semibold text-lg mb-2">Yapı Kimyasalları</h3>
+      <p class="text-gray-500 text-sm">Yalıtım, yapıştırma ve dolgu için endüstriyel çözümler.</p>
+    </a>
+
+    <a href="urunler.html#alci" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg>
+      </div>
+      <h3 class="font-heading font-semibold text-lg mb-2">Alçı &amp; Alçıpan</h3>
+      <p class="text-gray-500 text-sm">Dalsan, Entegre ve Baumit grubu ürünleriyle iç mekân çözümleri.</p>
+    </a>
+
+    <a href="urunler.html#yalitim" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"/></svg>
+      </div>
+      <h3 class="font-heading font-semibold text-lg mb-2">XPS / EPS Yalıtım</h3>
+      <p class="text-gray-500 text-sm">Isı ve ses yalıtımında yüksek performanslı parça malzemeler.</p>
+    </a>
+
+    <a href="urunler.html#gazbeton" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+      </div>
+      <h3 class="font-heading font-semibold text-lg mb-2">Gazbeton (Ytong vb.)</h3>
+      <p class="text-gray-500 text-sm">Hafif, yalıtımlı ve hızlı uygulanabilir yapı blokları.</p>
+    </a>
+
+    <a href="urunler.html" class="card-hover bg-primary text-white rounded-2xl p-7 shadow-sm sm:col-span-2 lg:col-span-2 flex flex-col justify-between">
+      <div>
+        <h3 class="font-heading font-semibold text-lg mb-2">Tüm Ürün Yelpazemiz</h3>
+        <p class="text-white/70 text-sm">Aradığınız ürünü göremediniz mi? İhtiyacınıza uygun malzemeyi bulmak için bizimle iletişime geçin.</p>
+      </div>
+      <span class="inline-flex items-center gap-2 mt-6 text-accent font-heading font-semibold text-sm">Ürünleri Görüntüle
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- NEDEN BİZ -->
+<section class="bg-accent-light/60">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-20 grid md:grid-cols-2 gap-14 items-center">
+    <div>
+      <span class="text-accent-dark font-heading font-semibold text-sm tracking-wide uppercase">Neden Ahlas Grup Yapı</span>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-dark mt-3 mb-6">Projelerinize Güç Katan Bir Ortak</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">İnşaat malzemeleri sektöründe müşterilerimizin ihtiyaçlarını hızlı, güvenli ve sorunsuz bir şekilde karşılamayı ilke edindik. Yenilikçi ürünler ve güvenilir hizmet anlayışıyla küçük ölçekli tadilatlardan büyük inşaat projelerine kadar her ihtiyaca çözüm sunuyoruz.</p>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="flex gap-3">
+          <div class="h-9 w-9 shrink-0 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-sm">1</div>
+          <div>
+            <p class="font-heading font-semibold">Hızlı Tedarik</p>
+            <p class="text-gray-500 text-sm">Zamanında sevkiyat ile projeniz aksamaz.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="h-9 w-9 shrink-0 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-sm">2</div>
+          <div>
+            <p class="font-heading font-semibold">Güvenilir Hizmet</p>
+            <p class="text-gray-500 text-sm">Şeffaf, sorunsuz ve dürüst iş anlayışı.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="h-9 w-9 shrink-0 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-sm">3</div>
+          <div>
+            <p class="font-heading font-semibold">Kaliteli Markalar</p>
+            <p class="text-gray-500 text-sm">Dalsan, Entegre, Baumit, Ytong gibi güçlü markalar.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="h-9 w-9 shrink-0 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-sm">4</div>
+          <div>
+            <p class="font-heading font-semibold">Uzman Danışmanlık</p>
+            <p class="text-gray-500 text-sm">Projenize en uygun malzemede doğru yönlendirme.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+      <div class="bg-white rounded-2xl p-6 shadow-sm text-center">
+        <p class="font-heading font-bold text-primary text-lg">Çimento</p>
+        <p class="text-gray-400 text-xs mt-1">32.5 - 42.5</p>
+      </div>
+      <div class="bg-primary rounded-2xl p-6 shadow-sm text-center text-white">
+        <p class="font-heading font-bold text-lg">Gazbeton</p>
+        <p class="text-white/60 text-xs mt-1">Ytong ve muadilleri</p>
+      </div>
+      <div class="bg-primary rounded-2xl p-6 shadow-sm text-center text-white">
+        <p class="font-heading font-bold text-lg">Alçıpan</p>
+        <p class="text-white/60 text-xs mt-1">Dalsan · Entegre · Baumit</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm text-center">
+        <p class="font-heading font-bold text-primary text-lg">XPS / EPS</p>
+        <p class="text-gray-400 text-xs mt-1">Yalıtım malzemeleri</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-16">
+  <div class="hero-pattern rounded-3xl px-8 py-14 md:px-16 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8 text-white">
+    <div>
+      <h2 class="font-heading text-2xl md:text-3xl font-bold mb-3">Projeniz İçin Teklif Almak Ister Misiniz?</h2>
+      <p class="text-white/75">Ekibimiz size en kısa sürede dönüş yapsın.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="tel:02122536161" class="bg-accent hover:bg-accent-dark text-primary-dark font-heading font-semibold px-6 py-3.5 rounded-lg transition-colors">0212 253 61 61</a>
+      <a href="iletisim.html#form" class="border border-white/30 hover:bg-white/10 font-heading font-semibold px-6 py-3.5 rounded-lg transition-colors">İletişim Formu</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-primary-dark text-white/80">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="images/logo.png" alt="Ahlas Grup Yapı" class="h-14 w-auto mb-4 bg-white rounded-md p-1.5">
+      <p class="text-sm text-white/60 leading-relaxed">Ahlas Grup Yapı Sanayi Ticaret Limited Şirketi; inşaat malzemeleri tedarikinde hızlı, güvenli ve sorunsuz çözüm ortağınızdır.</p>
+      <div class="flex gap-3 mt-5">
+        <a href="https://www.instagram.com/ahlasgrupyapi/" target="_blank" rel="noopener" aria-label="Instagram" class="h-9 w-9 rounded-full bg-white/10 hover:bg-accent hover:text-primary-dark flex items-center justify-center transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.25.07 1.63.07 4.81s-.01 3.56-.07 4.81c-.15 3.23-1.66 4.77-4.92 4.92-1.25.06-1.62.07-4.85.07s-3.6 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.15 15.56 2.14 15.19 2.14 12s.01-3.56.07-4.81c.15-3.23 1.66-4.77 4.92-4.92C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.14 0-3.5.01-4.73.07-2.27.1-3.33 1.18-3.43 3.43-.06 1.23-.07 1.59-.07 4.73s.01 3.5.07 4.73c.1 2.25 1.16 3.33 3.43 3.43 1.23.06 1.59.07 4.73.07s3.5-.01 4.73-.07c2.27-.1 3.33-1.18 3.43-3.43.06-1.23.07-1.59.07-4.73s-.01-3.5-.07-4.73c-.1-2.25-1.16-3.33-3.43-3.43C15.5 4.01 15.14 4 12 4zm0 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 1.8a2.7 2.7 0 100 5.4 2.7 2.7 0 000-5.4zm5.7-2a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/ahlas-grup-yapı/" target="_blank" rel="noopener" aria-label="LinkedIn" class="h-9 w-9 rounded-full bg-white/10 hover:bg-accent hover:text-primary-dark flex items-center justify-center transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23h-4.5V8.25zM8.5 8.25h4.31v2.01h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4.5V8.25z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="font-heading font-semibold text-white mb-4">Hızlı Linkler</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="index.html" class="hover:text-accent transition-colors">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html" class="hover:text-accent transition-colors">Hakkımızda</a></li>
+        <li><a href="urunler.html" class="hover:text-accent transition-colors">Ürünler</a></li>
+        <li><a href="projeler.html" class="hover:text-accent transition-colors">Projeler</a></li>
+        <li><a href="iletisim.html" class="hover:text-accent transition-colors">İletişim</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-heading font-semibold text-white mb-4">Ürünlerimiz</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="urunler.html#kum" class="hover:text-accent transition-colors">Şap / Kaba / Sıva Kumu</a></li>
+        <li><a href="urunler.html#cimento" class="hover:text-accent transition-colors">Çimento</a></li>
+        <li><a href="urunler.html#kimyasal" class="hover:text-accent transition-colors">Yapı Kimyasalları</a></li>
+        <li><a href="urunler.html#alci" class="hover:text-accent transition-colors">Alçı &amp; Alçıpan</a></li>
+        <li><a href="urunler.html#gazbeton" class="hover:text-accent transition-colors">Gazbeton</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-heading font-semibold text-white mb-4">İletişim</h4>
+      <ul class="space-y-3 text-sm text-white/70">
+        <li>Seba Central, Hamidiye, Cendere Cad. B Blok 6.kat - Daire 35, 34406 Kağıthane/İstanbul</li>
+        <li><a href="tel:02122536161" class="hover:text-accent transition-colors">0212 253 61 61</a></li>
+        <li><a href="mailto:info@ahlasyapi.com.tr" class="hover:text-accent transition-colors">info@ahlasyapi.com.tr</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 text-center text-xs text-white/50">
+    &copy; <span id="current-year">2026</span> Ahlas Grup Yapı Sanayi Ticaret Limited Şirketi. Tüm hakları saklıdır.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
