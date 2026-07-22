@@ -15,7 +15,8 @@
       extend: {
         colors: {
           primary: { DEFAULT: '#5A1A30', dark: '#3D1220', light: '#7A2C48' },
-          accent: { DEFAULT: '#6FB8E0', dark: '#3E8FBF', light: '#EAF6FC' }
+          accent: { DEFAULT: '#6FB8E0', dark: '#3E8FBF', light: '#EAF6FC' },
+          cream: '#FBF3F1'
         }
       }
     }
@@ -23,16 +24,16 @@
 </script>
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-cream text-gray-800">
 
 <!-- HEADER -->
-<header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+<header id="site-header" class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur border-b border-white/10">
   <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20">
     <a href="index.html" class="flex items-center gap-3">
-      <img src="images/logo.png" alt="Ahlas Grup Yapı Logo" class="h-14 w-auto">
+      <img src="images/logo.png" alt="Ahlas Grup Yapı Logo" class="h-14 w-auto bg-white rounded-md p-1.5">
     </a>
 
-    <nav class="hidden md:flex items-center gap-8 font-heading text-sm text-gray-700">
+    <nav class="hidden md:flex items-center gap-8 font-heading text-sm text-white/85">
       <a href="index.html" class="nav-link active pb-1">Ana Sayfa</a>
       <a href="hakkimizda.html" class="nav-link pb-1">Hakkımızda</a>
       <a href="urunler.html" class="nav-link pb-1">Ürünler</a>
@@ -41,29 +42,29 @@
     </nav>
 
     <div class="hidden md:flex items-center gap-5">
-      <a href="tel:02122536161" class="flex items-center gap-2 text-primary font-semibold text-sm">
+      <a href="tel:02122536161" class="flex items-center gap-2 text-white font-semibold text-sm">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.01l-2.2 2.21z"/></svg>
         0212 253 61 61
       </a>
-      <a href="iletisim.html#form" class="bg-primary hover:bg-primary-dark text-white text-sm font-heading font-semibold px-5 py-2.5 rounded-lg transition-colors">Teklif Alın</a>
+      <a href="iletisim.html#form" class="bg-accent hover:bg-accent-dark text-primary-dark text-sm font-heading font-semibold px-5 py-2.5 rounded-lg transition-colors">Teklif Alın</a>
     </div>
 
     <button id="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5">
-      <span class="hamburger-line line-1 block w-6 h-0.5 bg-primary"></span>
-      <span class="hamburger-line line-2 block w-6 h-0.5 bg-primary"></span>
-      <span class="hamburger-line line-3 block w-6 h-0.5 bg-primary"></span>
+      <span class="hamburger-line line-1 block w-6 h-0.5 bg-white"></span>
+      <span class="hamburger-line line-2 block w-6 h-0.5 bg-white"></span>
+      <span class="hamburger-line line-3 block w-6 h-0.5 bg-white"></span>
     </button>
   </div>
 
-  <div id="mobile-menu" class="md:hidden border-t border-gray-100">
-    <nav class="flex flex-col px-5 py-4 gap-4 font-heading text-gray-700">
+  <div id="mobile-menu" class="md:hidden border-t border-white/10">
+    <nav class="flex flex-col px-5 py-4 gap-4 font-heading text-white/85">
       <a href="index.html" class="active">Ana Sayfa</a>
       <a href="hakkimizda.html">Hakkımızda</a>
       <a href="urunler.html">Ürünler</a>
       <a href="projeler.html">Projeler</a>
       <a href="iletisim.html">İletişim</a>
-      <a href="tel:02122536161" class="text-primary font-semibold">0212 253 61 61</a>
-      <a href="iletisim.html#form" class="bg-primary text-white text-center font-semibold px-5 py-2.5 rounded-lg">Teklif Alın</a>
+      <a href="tel:02122536161" class="text-white font-semibold">0212 253 61 61</a>
+      <a href="iletisim.html#form" class="bg-accent text-primary-dark text-center font-semibold px-5 py-2.5 rounded-lg">Teklif Alın</a>
     </nav>
   </div>
 </header>
@@ -112,7 +113,7 @@
   </div>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <a href="urunler.html#kum" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+    <a href="urunler.html#kum" class="card-hover bg-white border border-primary/10 rounded-2xl p-7 shadow-sm">
       <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20h16M6 20l3-9m6 9l-3-9M9 11h6M9 11L7 4h10l-2 7"/></svg>
       </div>
@@ -120,15 +121,15 @@
       <p class="text-gray-500 text-sm">Elenmiş, kaliteli kum çeşitleri ile sağlam ve pürüzsüz yüzeyler.</p>
     </a>
 
-    <a href="urunler.html#cimento" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
-      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+    <a href="urunler.html#cimento" class="card-hover bg-white border border-primary/10 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0v10l-8 4m8-14l-8 4m0 10l-8-4V7m8 14V11m0 0L4 7"/></svg>
       </div>
       <h3 class="font-heading font-semibold text-lg mb-2">Çimento (32.5 - 42.5)</h3>
       <p class="text-gray-500 text-sm">Farklı dayanım sınıflarında, projeye özel çimento tedariki.</p>
     </a>
 
-    <a href="urunler.html#kimyasal" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+    <a href="urunler.html#kimyasal" class="card-hover bg-white border border-primary/10 rounded-2xl p-7 shadow-sm">
       <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6m-5 0v6.2a2 2 0 01-.4 1.2L5.5 16.6A2 2 0 007 20h10a2 2 0 001.5-3.4l-4.1-6.2A2 2 0 0114 9.2V3"/></svg>
       </div>
@@ -136,15 +137,15 @@
       <p class="text-gray-500 text-sm">Yalıtım, yapıştırma ve dolgu için endüstriyel çözümler.</p>
     </a>
 
-    <a href="urunler.html#alci" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
-      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+    <a href="urunler.html#alci" class="card-hover bg-white border border-primary/10 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg>
       </div>
       <h3 class="font-heading font-semibold text-lg mb-2">Alçı &amp; Alçıpan</h3>
       <p class="text-gray-500 text-sm">Dalsan, Entegre ve Baumit grubu ürünleriyle iç mekân çözümleri.</p>
     </a>
 
-    <a href="urunler.html#yalitim" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
+    <a href="urunler.html#yalitim" class="card-hover bg-white border border-primary/10 rounded-2xl p-7 shadow-sm">
       <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"/></svg>
       </div>
@@ -152,8 +153,8 @@
       <p class="text-gray-500 text-sm">Isı ve ses yalıtımında yüksek performanslı parça malzemeler.</p>
     </a>
 
-    <a href="urunler.html#gazbeton" class="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
-      <div class="h-12 w-12 rounded-xl bg-accent-light flex items-center justify-center mb-5">
+    <a href="urunler.html#gazbeton" class="card-hover bg-white border border-primary/10 rounded-2xl p-7 shadow-sm">
+      <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
       </div>
       <h3 class="font-heading font-semibold text-lg mb-2">Gazbeton (Ytong vb.)</h3>

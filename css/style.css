@@ -50,7 +50,7 @@ h1, h2, h3, h4, .font-heading {
   width: 100%;
 }
 .nav-link.active {
-  color: #5A1A30;
+  color: #EAF6FC;
   font-weight: 600;
 }
 
@@ -89,8 +89,8 @@ h1, h2, h3, h4, .font-heading {
 
 /* Placeholder gallery tiles (Projeler sayfası) */
 .placeholder-tile {
-  background: linear-gradient(135deg, #EAF6FC 0%, #f5eef1 100%);
-  border: 1.5px dashed #b9c9d3;
+  background: linear-gradient(135deg, #EAF6FC 0%, #f3e2e8 100%);
+  border: 1.5px dashed #c9a6b4;
 }
 
 /* Form focus ring using brand accent */
