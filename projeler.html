@@ -81,38 +81,68 @@
 
 <!-- GALERİ -->
 <section class="max-w-7xl mx-auto px-5 md:px-8 py-20">
-  <!-- Not: Aşağıdaki kartlar geçici görsel alanlarıdır. Gerçek proje fotoğrafları eklendiğinde
-       "images/projeler/" klasörüne yüklenip placeholder-tile div'leri <img> ile değiştirilebilir. -->
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="placeholder-tile rounded-2xl h-64 flex flex-col items-center justify-center gap-3 text-center px-6">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg>
-      <p class="font-heading font-semibold text-primary-dark">Konut Projesi</p>
-      <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+  <!-- Not: Slaytlardaki placeholder-tile div'leri, gerçek proje fotoğrafları "images/projeler/" klasörüne
+       eklendiğinde <img class="absolute inset-0 w-full h-full object-cover"> ile değiştirilebilir. -->
+  <div id="project-carousel" class="relative rounded-2xl overflow-hidden shadow-sm border border-primary/10">
+    <div id="carousel-track" class="flex transition-transform duration-500 ease-out">
+      <div class="relative w-full shrink-0 h-[380px] md:h-[560px]">
+        <div class="absolute inset-0 placeholder-tile flex flex-col items-center justify-center gap-3 text-center px-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg>
+          <p class="font-heading font-semibold text-primary-dark text-lg">Güneşli Artaş Projesi</p>
+          <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+        </div>
+      </div>
+      <div class="relative w-full shrink-0 h-[380px] md:h-[560px]">
+        <div class="absolute inset-0 placeholder-tile flex flex-col items-center justify-center gap-3 text-center px-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 21V7a2 2 0 012-2h4l2-2 2 2h4a2 2 0 012 2v14M9 21v-4h6v4M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
+          <p class="font-heading font-semibold text-primary-dark text-lg">Sazlıbosna Toki Projesi</p>
+          <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+        </div>
+      </div>
+      <div class="relative w-full shrink-0 h-[380px] md:h-[560px]">
+        <div class="absolute inset-0 placeholder-tile flex flex-col items-center justify-center gap-3 text-center px-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.97 0-9-3.5-9-8a9 9 0 0118 0c0 4.5-4.03 8-9 8z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 10h6M9 14h4"/></svg>
+          <p class="font-heading font-semibold text-primary-dark text-lg">Proje 3</p>
+          <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+        </div>
+      </div>
+      <div class="relative w-full shrink-0 h-[380px] md:h-[560px]">
+        <div class="absolute inset-0 placeholder-tile flex flex-col items-center justify-center gap-3 text-center px-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+          <p class="font-heading font-semibold text-primary-dark text-lg">Proje 4</p>
+          <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+        </div>
+      </div>
+      <div class="relative w-full shrink-0 h-[380px] md:h-[560px]">
+        <div class="absolute inset-0 placeholder-tile flex flex-col items-center justify-center gap-3 text-center px-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6m-5 0v6.2a2 2 0 01-.4 1.2L5.5 16.6A2 2 0 007 20h10a2 2 0 001.5-3.4l-4.1-6.2A2 2 0 0114 9.2V3"/></svg>
+          <p class="font-heading font-semibold text-primary-dark text-lg">Proje 5</p>
+          <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+        </div>
+      </div>
+      <div class="relative w-full shrink-0 h-[380px] md:h-[560px]">
+        <div class="absolute inset-0 placeholder-tile flex flex-col items-center justify-center gap-3 text-center px-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"/></svg>
+          <p class="font-heading font-semibold text-primary-dark text-lg">Proje 6</p>
+          <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+        </div>
+      </div>
     </div>
-    <div class="placeholder-tile rounded-2xl h-64 flex flex-col items-center justify-center gap-3 text-center px-6">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 21V7a2 2 0 012-2h4l2-2 2 2h4a2 2 0 012 2v14M9 21v-4h6v4M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
-      <p class="font-heading font-semibold text-primary-dark">Ticari Yapı Projesi</p>
-      <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
-    </div>
-    <div class="placeholder-tile rounded-2xl h-64 flex flex-col items-center justify-center gap-3 text-center px-6">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.97 0-9-3.5-9-8a9 9 0 0118 0c0 4.5-4.03 8-9 8z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 10h6M9 14h4"/></svg>
-      <p class="font-heading font-semibold text-primary-dark">Tadilat / Renovasyon</p>
-      <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
-    </div>
-    <div class="placeholder-tile rounded-2xl h-64 flex flex-col items-center justify-center gap-3 text-center px-6">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
-      <p class="font-heading font-semibold text-primary-dark">Gazbeton Uygulaması</p>
-      <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
-    </div>
-    <div class="placeholder-tile rounded-2xl h-64 flex flex-col items-center justify-center gap-3 text-center px-6">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6m-5 0v6.2a2 2 0 01-.4 1.2L5.5 16.6A2 2 0 007 20h10a2 2 0 001.5-3.4l-4.1-6.2A2 2 0 0114 9.2V3"/></svg>
-      <p class="font-heading font-semibold text-primary-dark">İç Mekân / Alçıpan</p>
-      <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
-    </div>
-    <div class="placeholder-tile rounded-2xl h-64 flex flex-col items-center justify-center gap-3 text-center px-6">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"/></svg>
-      <p class="font-heading font-semibold text-primary-dark">Yalıtım Projesi</p>
-      <p class="text-gray-500 text-sm">Görsel yakında eklenecektir</p>
+
+    <button id="carousel-prev" type="button" aria-label="Önceki proje" class="absolute left-4 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white/90 hover:bg-white text-primary-dark flex items-center justify-center shadow-md transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <button id="carousel-next" type="button" aria-label="Sonraki proje" class="absolute right-4 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white/90 hover:bg-white text-primary-dark flex items-center justify-center shadow-md transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <button type="button" class="h-2.5 w-2.5 rounded-full bg-primary/30 transition-colors" data-index="0" aria-label="1. proje"></button>
+      <button type="button" class="h-2.5 w-2.5 rounded-full bg-primary/30 transition-colors" data-index="1" aria-label="2. proje"></button>
+      <button type="button" class="h-2.5 w-2.5 rounded-full bg-primary/30 transition-colors" data-index="2" aria-label="3. proje"></button>
+      <button type="button" class="h-2.5 w-2.5 rounded-full bg-primary/30 transition-colors" data-index="3" aria-label="4. proje"></button>
+      <button type="button" class="h-2.5 w-2.5 rounded-full bg-primary/30 transition-colors" data-index="4" aria-label="5. proje"></button>
+      <button type="button" class="h-2.5 w-2.5 rounded-full bg-primary/30 transition-colors" data-index="5" aria-label="6. proje"></button>
     </div>
   </div>
 </section>
